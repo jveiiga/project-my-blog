@@ -318,5 +318,6 @@ li a:hover,
 }
 
 .container-img-stacks img {
+  max-width: 333px;
   padding: 0 12px 0 0;
 }

@@ -19,11 +19,10 @@ const PagesAboutMe = () => {
           feel for UI design.
           <br />I have language skills:
           <div className="container-img-stacks">
-              <img src="/images/logo/html-logo.png" alt="loog html"/>
-              <img src="/images/logo/css-logo.png" alt="logo css"/>
-              <img src="/images/logo/js-logo.png" alt="logo javascript"/>
+              <img src="/images/logo/html-logo.png" alt="loog html" />
+              <img src="/images/logo/css-logo.png" alt="logo css" />
+              <img src="/images/logo/js-logo.png" alt="logo javascript" />
           </div>
-       
           And I have experience with Sass and Bootstrap. I am currently
           dedicated to learning React, Next and TypeScript, working on projects
           with API consumption, componentization and pagination. I like to learn
