@@ -1,11 +1,13 @@
 import React from 'react';
 
+import PagesBlogPostsCard from './PostsCard/Posts'
+
 const PagesBlog = () => {
     return (
-        <div>
-            laia laia laia laia laia 
-        </div>
-    )
+        <>
+            <PagesBlogPostsCard />
+        </>
+    );
 }
 
 export default PagesBlog;
