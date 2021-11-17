@@ -4,9 +4,7 @@ import React from 'react';
 const PagesBlogPostOne = () => {
     return (
       <main className="container-post__one">
-        <h3 className="container-title">
-          Return API with Promises Assync, Await
-        </h3>
+        <h3 className="container-title">Promises and Async, Await</h3>
         <p className="container-text-part__one">
           Faaala Dev, tudo bem? Espero que sim. Para iniciar as postagens do
           blog resolvi escolher um tema que vem se fazendo cada dia mais
@@ -48,7 +46,7 @@ const PagesBlogPostOne = () => {
           contexto as funções que vão receber esse parâmetro no nosso App.
         </p>
         <img
-          src="/images/blog/post-one/imageOne.png"
+          src="/images/blog/async-await/imageOne.png"
           alt="imagem demonstrativa do exemplo"
           className="container-image-services-one"
         />
@@ -84,7 +82,7 @@ const PagesBlogPostOne = () => {
           </li>
         </p>
         <img
-          src="/images/blog/post-one/imageTwo.png"
+          src="/images/blog/async-await/imageTwo.png"
           alt="imagem demonstrativa do exemplo"
           className="container-image-services-two"
         />
@@ -111,7 +109,7 @@ const PagesBlogPostOne = () => {
           ver os valores retornando no browser.
         </p>
         <img
-          src="/images/blog/post-one/imageThree.png"
+          src="/images/blog/async-await/imageThree.png"
           alt="imagem demonstrativa do exemplo"
           className="container-image-services-three"
         />
@@ -132,7 +130,7 @@ const PagesBlogPostOne = () => {
           _pokemonData e renderizará nosso state.
         </p>
         <img
-          src="/images/blog/post-one/imageFour.png"
+          src="/images/blog/async-await/imageFour.png"
           alt="imagem demonstrativa do exemplo"
           className="container-image-services-four"
         />
@@ -145,7 +143,7 @@ const PagesBlogPostOne = () => {
           componente Card que recebe como props nosso outro component pokemon.
         </p>
         <img
-          src="/images/blog/post-one/imageFive.png"
+          src="/images/blog/async-await/imageFive.png"
           alt="imagem demonstrativa do exemplo"
           className="container-image-services-five"
         />
@@ -165,7 +163,7 @@ const PagesBlogPostOne = () => {
           data.next.
         </p>
         <img
-          src="/images/blog/post-one/imageSix.png"
+          src="/images/blog/async-await/imageSix.png"
           alt="imagem demonstrativa do exemplo"
           className="container-image-services-six"
         />
@@ -177,10 +175,54 @@ const PagesBlogPostOne = () => {
           carregamentos, uma vez que já obtivemos os dados.
         </p>
         <img
-          src="/images/blog/post-one/imageSeven.png"
+          src="/images/blog/async-await/imageSeven.png"
           alt="imagem demonstrativa do exemplo"
           className="container-image-services-seven"
         />
+        <p className="container-text-part__eight">
+          loadPokemon tem como parâmetro os dados que retornam da APi (data).
+          let _pokemonData, recebe e aguarda (await) que todas (all) as Promises
+          tenham sido resolvidas e após serem resolvidas queremos que todas
+          essas Promises nos retornem a matriz dos dados (objetos) coletados.
+          Faremos um mapeamento da matriz através do data.map. Logo após
+          passamos uma função assíncrona para pokemon e definimos uma nova
+          variável dentro do escopo, chamada pokemonRecord (gravando pokemons),
+          essa variável tem como objetivo guardar os dados individuais de cada
+          objeto (pokemon) vindo do array e aguardar os dados vindos do
+          componente pokemon, mas principalmente da função getPokemon (obter
+          pokemon). Após fazermos o mapeamento e obtermos todos os dados,
+          retornamos os dados armazenados e em seguida passamos a armazena-los
+          novamente em nosso state do React (useEffect) com setPokemonData,
+          passamos como parâmetro nossa função _pokemonData e assim temos o
+          fetch dos dados disponíveis para exibição.
+        </p>
+        <img
+          src="/images/blog/async-await/imageEight.png"
+          alt="imagem demonstrativa do exemplo"
+          className="container-image-services-eight"
+        />
+        <p className="container-text-part__nine">
+          Com as implementações feitas, iremos cuidar agora do processo de
+          renderização de nossos componentes. Iremos passar dentro da div
+          “card__name” nossos objetos. Iniciamos fazendo um mapeando de
+          pokemonData que receberá nosso component (objeto) pokemon, junto com o
+          valor da nossa chave kei. Logo após retornamos nossos dados (objetos),
+          dentro do nosso componente Card e passamos duas propriedades: kei com
+          o valor i e pokemon com o objeto pokemon. Pronto! Agora já é possível
+          ver no browser os dados vindos da nossa APi pokeAPI. Para finalizar
+          vamos adicionar alguns eventos aos botões que estão implementados logo
+          a baixo. Usando o manipulador de eventos do React, onClick, passamos
+          os parâmetros da nossa url (APi), prev e next.
+        </p>
+        <img
+          src="/images/blog/async-await/imageNine.png"
+          alt="imagem demonstrativa do exemplo"
+          className="container-image-services-nine"
+        />
+        <p className="container-text-part__ten">
+          Com isso finalizamos nossa aplicação. Espero que ter ajudado e nos
+          vemos no próximo post. Até breve🖖🏾
+        </p>
       </main>
     );
 }

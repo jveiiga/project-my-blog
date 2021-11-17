@@ -1,11 +1,11 @@
 import React from 'react';
 
-import PagesBlogPostsCard from './PostsCard/Posts'
+import PagesBlogAsyncAwait from './PostsCard/Posts'
 
 const PagesBlog = () => {
     return (
         <>
-            <PagesBlogPostsCard />
+            <PagesBlogAsyncAwait />
         </>
     );
 }
