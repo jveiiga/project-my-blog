@@ -6,12 +6,12 @@ const PagesMain = () => {
     return (
         <main className="container-main">
         <img
-          src="/images/my-image/my_image_tablet.png"
+          src="/images/my-image/my_image_mobile.png"
           alt="it's me"
           className="container-my-image__mobile"
         />
         <img
-          src="/images/my-image/my_image_tablet.png"
+          src="/images/my-image/my_image.png"
           alt="it's me"
           className="container-my-image__tablet"
         />

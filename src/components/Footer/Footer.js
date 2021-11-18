@@ -1,11 +1,15 @@
 import React from 'react';
 
+
 const Footer = () => {
     return (
       <footer className="container-footer">
         <div className="container-icon-text">
           <div>
-            <img src="/images/icon/icon_heart.png" alt="icon heart" />
+            <img
+              src="https://img.icons8.com/plumpy/24/000000/code.png"
+              alt="icon codigo font"
+            />
           </div>
           <div className="container-text__footer">
             <p>por Jeferson Veiga</p>
@@ -13,13 +17,30 @@ const Footer = () => {
         </div>
         <div>
           <div className="container-icons">
-            <img src="/images/icon/GithubLogo_mobile.png" alt="github" />
-            <img src="/images/icon/LinkedinLogo_mobile.png" alt="linkedin" />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/jveiiga"
+            >
+              <img
+                src="https://img.icons8.com/ios-filled/30/000000/github.png"
+                alt="icon git hub"
+              />
+            </a>
             <img
-              src="/images/icon/EnvelopeSimple_mobile.png"
-              alt="envelope"
-              className="icon-envelope"
+              src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"
+              alt="icon linkedin"
             />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:jeferson.veiiga@icloud.com"
+            >
+              <img
+                src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/35/000000/external-email-interface-kiranshastry-solid-kiranshastry.png"
+                alt="icon email"
+              />
+            </a>
           </div>
         </div>
       </footer>

@@ -34,6 +34,7 @@ code {
   position: fixed;
   width: 100%;
   height: 56px;
+  z-index: 420;
 }
 
 h1 {
@@ -183,7 +184,7 @@ li a:hover,
 .container-my-image__mobile {
   object-fit: cover;
   height: 250px;
-  width: 265px;
+  width: 250px;
 }
 
 .container-my-image__tablet {
@@ -227,6 +228,7 @@ li a:hover,
   display: flex;
   justify-content: space-between;
   width: 139px;
+  height: 30px;
   cursor: pointer;
 }
 
