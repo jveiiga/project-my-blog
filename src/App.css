@@ -182,6 +182,8 @@ li a:hover,
 
 .container-my-image__mobile {
   object-fit: cover;
+  height: 250px;
+  width: 250px;
 }
 
 .container-my-image__tablet {
