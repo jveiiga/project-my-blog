@@ -28,7 +28,7 @@ const Footer = () => {
               />
             </a>
             <img
-              src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"
+              src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"
               alt="icon linkedin"
             />
             <a
