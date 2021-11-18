@@ -23,6 +23,7 @@ code {
   font-family: monospace;
   color: red;
   background-color: #e6e6e6;
+  border-radius: 6px;
 }
 
 /***************** header **************/

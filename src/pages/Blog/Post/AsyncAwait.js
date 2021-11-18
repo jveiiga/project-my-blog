@@ -6,49 +6,60 @@ const PagesBlogPostOne = () => {
       <main className="container-post__one">
         <h3 className="container-title">Promises and Async, Await</h3>
         <p className="container-text-async__await">
-          Faaala Dev, tudo bem? Espero que sim. Para iniciar as postagens do
-          blog resolvi escolher um tema que vem se fazendo cada dia mais
-          presente na minha jornada. Sem mais delongas, vamos lá !! Depois de
-          algum tempo programando em JavaScript, confesso que me acostumei a
-          utiliza-lo de forma síncrona, vendo blocos de códigos sendo executados
-          linha após linha e a pensar de forma síncrona de programá-los, mas e
-          se houvesse outras possibilidades que fizessem esse trabalho ficar
-          mais assíncrono, tornando as <code>Promises</code> e a componentização
-          mais reutilizável e facilitando também a manutenção do código? Foi com
-          essa missão que esses recursos foram implementados pelo ECMAScript
-          2017. Não vou focar em como as coisas eram e como agora são, até por
-          que já tem bastante conteúdo disponível, com muito mais qualidade e
-          muito bem feito! Diferente disso quero apenas trazer uma abordagem que
-          talvez ajude alguém em algum lugar que esteja buscando uma estratégia
-          para começar a utiliza-lá. Na minha cabeça <code>Promises</code> faz
-          mais sentido quando começamos a consumir APis, ter nossas requisições
-          feitas por um componente específico e declara-lo em funções
-          assíncronas quando precisamos fazer a chamada dos dados, é algo que
-          torna o código de fácil compreensão e leitura, alem de torna-lo um
-          código que tende a crescer para baixo sem formar aquela “barriga”,
-          deixando seu aninhamento menos complexo. Vale lembrar que o JavaScript
-          continuará executando os blocos de código de forma síncrona, mas esses
-          requests que são passados para uma thread separada, fazem com que o
-          código continue executando normalmente sem travar seu fluxo, fazendo o
-          request dos dados e adicionando a função de callback ao fim da fila de
-          funções. <br />
-          Neste exemplo logo abaixo que foi construído utilizando a APi Pokemon,
-          é criado um componente chamado <code>services</code>, esse componente
-          tem como objetivo fazer algumas de nossas requisições. A primeira
-          função
-          <code>getAllPokemon</code> tem como objetivo retornar um JSON de todos
-          os Pokemons listados na APi, a função recebe como parâmetro a{" "}
-          <code>URL</code> e retorna uma nova promessa{" "}
-          <code>(new Promise)</code> que recebe outros parâmetros padrão,{" "}
-          <code>resolve</code> e<code>reject</code>, logo após é feito um{" "}
-          <code>fetch</code> para a <code>URL</code> e um <code>THEN</code> que
-          faz a busca e verificação do JSON e logo abaixo outro{" "}
-          <code>THEN</code> que será executado assim que o JSON dos Pokemons
-          retornar. A segunda função, tem os mesmos objetivo, mas ao invés de
-          ser utilizada para listar todos os Pokemons, ela vai ser utilizada
-          para exibir individualmente esses Pokemons. Achei melhor iniciar com
-          esse componente para dar contexto as funções que vão receber esse
-          parâmetro no nosso App.
+          <p>
+            Faaala Dev, tudo bem? Espero que sim. Para iniciar as postagens do
+            blog resolvi escolher um tema que vem se fazendo cada dia mais
+            presente na minha jornada. Sem mais delongas, vamos lá !!
+          </p>{" "}
+          <p>
+            Depois de algum tempo programando em JavaScript, confesso que me
+            acostumei a utiliza-lo de forma síncrona, vendo blocos de códigos
+            sendo executados linha após linha e a pensar de forma síncrona de
+            programá-los, mas e se houvesse outras possibilidades que fizessem
+            esse trabalho ficar mais assíncrono, tornando as{" "}
+            <code>Promises</code> e a componentização mais reutilizável e
+            facilitando também a manutenção do código? Foi com essa missão que
+            esses recursos foram implementados pelo ECMAScript 2017. Não vou
+            focar em como as coisas eram e como agora são, até por que já tem
+            bastante conteúdo disponível, com muito mais qualidade e muito bem
+            feito! Diferente disso quero apenas trazer uma abordagem que talvez
+            ajude alguém em algum lugar que esteja buscando uma estratégia para
+            começar a utiliza-lá.
+          </p>{" "}
+          <p>
+            Na minha cabeça <code>Promises</code> faz mais sentido quando
+            começamos a consumir APis, ter nossas requisições feitas por um
+            componente específico e declara-lo em funções assíncronas quando
+            precisamos fazer a chamada dos dados, é algo que torna o código de
+            fácil compreensão e leitura, alem de torna-lo um código que tende a
+            crescer para baixo sem formar aquela “barriga”, deixando seu
+            aninhamento menos complexo. Vale lembrar que o JavaScript continuará
+            executando os blocos de código de forma síncrona, mas esses requests
+            que são passados para uma thread separada, fazem com que o código
+            continue executando normalmente sem travar seu fluxo, fazendo o
+            request dos dados e adicionando a função de callback ao fim da fila
+            de funções.
+          </p>
+          <p>
+            Neste exemplo logo abaixo que foi construído utilizando a APi
+            Pokemon, é criado um componente chamado <code>services</code>, esse
+            componente tem como objetivo fazer algumas de nossas requisições. A
+            primeira função
+            <code>getAllPokemon</code> tem como objetivo retornar um JSON de
+            todos os Pokemons listados na APi, a função recebe como parâmetro a{" "}
+            <code>URL</code> e retorna uma nova promessa (
+            <code>new Promise</code>) que recebe outros parâmetros padrão,{" "}
+            <code>resolve</code> e <code>reject</code>, logo após é feito um{" "}
+            <code>fetch</code> para a <code>URL</code> e um <code>THEN</code>{" "}
+            que faz a busca e verificação do JSON e logo abaixo outro{" "}
+            <code>THEN</code> que será executado assim que o JSON dos Pokemons
+            retornar.
+          </p>{" "}
+          A segunda função, tem os mesmos objetivo, mas ao invés de ser
+          utilizada para listar todos os Pokemons, ela vai ser utilizada para
+          exibir individualmente esses Pokemons. Achei melhor iniciar com esse
+          componente para dar contexto as funções que vão receber esse parâmetro
+          no nosso App.
         </p>
         <img
           src="/images/blog/async-await/imageOne.png"
@@ -57,38 +68,38 @@ const PagesBlogPostOne = () => {
         />
         <p className="container-text-async__await">
           <div className="container-text-list">
-            Em nosso App, iniciamos nossa função declarando as variáveis que
-            serão utilizadas. Utilizando o <code>useState</code>, iremos
-            implementar as seguintes funcionalidades:
+            <p>
+              Em nosso App, iniciamos nossa função declarando as variáveis que
+              serão utilizadas. Utilizando o <code>useState</code>, iremos
+              implementar as seguintes funcionalidades:
+            </p>
           </div>
-          <li>
-            ⚫️ <code>pokemonData</code> - Inicialmente recebe um Array vazio e
-            retorna a listagem de todos os Pokemons da APi.
-          </li>
-
-          <li>
-            ⚫️ <code>nextUrl</code> - Inicialmente recebe uma String vazia e
-            quando o estado é alterado, recebe os parâmetros dos próximos
-            Pokemons vindo da APi.
-          </li>
-
-          <li>
-            ⚫️ <code>prevURL</code> - Tem praticamente as mesmas funções da
-            nextUrl, exceto uma condicional que verifica se há ou não uma página
-            anterior.
-          </li>
-
-          <li>
-            ⚫️ <code>loading</code> - Inicialmente recebe um valor booleano
-            (true), verifica e executa o carregamento dos dados da primeira
-            página da APi.
-          </li>
-
-          <li>
-            ⚫️ <code>initialUrl</code> - Armazena os dados que retornam da APi
-            para serem manipulados da melhor forma durante o desenvolvimento do
-            programa.
-          </li>
+          <ul>
+            <li>
+              ⚫️ <code>pokemonData</code> - Inicialmente recebe um Array vazio
+              e retorna a listagem de todos os Pokemons da APi.
+            </li>
+            <li>
+              ⚫️ <code>nextUrl</code> - Inicialmente recebe uma String vazia e
+              quando o estado é alterado, recebe os parâmetros dos próximos
+              Pokemons vindo da APi.
+            </li>
+            <li>
+              ⚫️ <code>prevURL</code> - Tem praticamente as mesmas funções da
+              nextUrl, exceto uma condicional que verifica se há ou não uma
+              página anterior.
+            </li>
+            <li>
+              ⚫️ <code>loading</code> - Inicialmente recebe um valor booleano
+              (true), verifica e executa o carregamento dos dados da primeira
+              página da APi.
+            </li>
+            <li>
+              ⚫️ <code>initialUrl</code> - Armazena os dados que retornam da
+              APi para serem manipulados da melhor forma durante o
+              desenvolvimento do programa.
+            </li>
+          </ul>
         </p>
         <img
           src="/images/blog/async-await/imageTwo.png"
@@ -191,7 +202,7 @@ const PagesBlogPostOne = () => {
           um novo array sem alterar o anterior, armazenar e gravar os resultados
           vindo da APi. <code>setNextUrl</code> armazena os dados do nosso
           próximo <code>state</code> pegando os dados vindo da APi através de
-          <code>data.next.</code>
+          <code>data.next</code>.
         </p>
         <img
           src="/images/blog/async-await/imageSix.png"
