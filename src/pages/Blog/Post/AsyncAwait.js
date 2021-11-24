@@ -271,7 +271,7 @@ const PagesBlogPostOne = () => {
           className="container-image-async__await"
         />
         <p className="container-text-async__await">
-          Com isso finalizamos nossa aplicação. Espero que ter ajudado e nos
+          Com isso finalizamos nossa aplicação. Espero ter ajudado e nos
           vemos no próximo post. Até breve🖖🏾
         </p>
       </main>
