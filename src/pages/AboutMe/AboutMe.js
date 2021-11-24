@@ -43,7 +43,7 @@ const PagesAboutMe = () => {
             My contact email, GitHub and LinkedIn are just below. I am open to
             questions whenever to need.
           </p>
-          <p>Hugs!! 🤝👋</p>
+          <p>Hugs! 🤝👋</p>
         </div>
         <Footer />
       </main>
