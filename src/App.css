@@ -353,6 +353,21 @@ li a:hover,
   border: none;
 }
 
+.container-copytoclipboard {
+  max-width: 333px;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 10px 0 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.container-copytoclipboard:hover{
+  background-color: hsl(120, 100%, 93%);
+  border-color: #00C642;
+}
+
 /******************* 768px Main Page ********************/
 
 @media (min-width: 768px) and (max-width: 1023px) {
