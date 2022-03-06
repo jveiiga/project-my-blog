@@ -307,23 +307,23 @@ li a:hover,
   font-size: 25px;
 }
 
-.container-card__async-await:hover {
+.container-card:hover {
   box-shadow: 0px 2px 5px 2px #33333369;
 }
 
-.container-card__async-await {
+.container-card {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 333px;
-  height: 100px;
+  height: 130px;
   text-align: center;
   border-radius: 6px;
   background-color: #e6e6e6;
 }
 
-/******************* page Async Await ***************/
+/******************* page Blog ***************/
 
 .container-post__one {
   max-width: 333px;
@@ -335,11 +335,11 @@ li a:hover,
   font-weight: bold;
 }
 
-.container-text-async__await {
+.container-text-general {
   margin: 26px 0 26px 0;
 }
 
-.container-image-async__await {
+.container-image {
   max-width: 333px;
   border-radius: 6px;
 }
@@ -348,7 +348,7 @@ li a:hover,
   margin-top: 26px;
 }
 
-.container-text-async__await li {
+.container-text-general li {
   margin-left: -19px;
   border: none;
 }
@@ -431,11 +431,11 @@ li a:hover,
     font-size: 25px;
   }
 
-  .container-card__async-await:hover {
+  .container-card:hover {
     box-shadow: 0px 2px 5px 2px #33333369;
   }
 
-  .container-card__async-await {
+  .container-card {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -455,7 +455,7 @@ li a:hover,
     max-width: 690px;
   }
 
-  .container-image-async__await {
+  .container-image {
     max-width: 690px;
   }
 
@@ -579,23 +579,36 @@ li a:hover,
     font-size: 25px;
   }
 
-  .container-card__async-await:hover {
+  .container-card:hover {
     box-shadow: 0px 2px 5px 2px #33333369;
   }
 
-  .container-card__async-await {
+  .container-card {
     width: 900px;
   }
 }
 
-/*************** 1024px page Async Await  ****************/
+/*************** 1024px pages blog  ****************/
 
 @media (min-width: 1024px) {
   .container-post__one {
     max-width: 1100px;
   }
 
-  .container-image-async__await {
-    max-width: 1000px;
+  .container-image {
+    max-width: 100%;
+  }
+
+  .container-copytoclipboard {
+    width: 675px;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 10px 0 10px 20px;
+    cursor: pointer;
+  }
+
+  .container-copytoclipboard:hover{
+    background-color: hsl(120, 100%, 93%);
+    border-color: #00C642;
   }
 }
