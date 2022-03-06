@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const PagesBlogPostOne = () => {
+const PagesBlogAsyncAwait = () => {
     return (
       <main className="container-post__one">
         <h3 className="container-title">Promises and Async, Await</h3>
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           <p>
             Faaala Dev, tudo bem? Espero que sim. Para iniciar as postagens do
             blog resolvi escolher um tema que vem se fazendo cada dia mais
@@ -64,9 +64,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageOne.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           <div className="container-text-list">
             <p>
               Em nosso App, iniciamos nossa função declarando as variáveis que
@@ -104,9 +104,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageTwo.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           Utilizando o <code>useEffect</code>, vamos cuidar da renderização dos
           dados da APi através dos components de <code>state</code>.
           Declamáramos inicialmente uma função assíncrona chamada{" "}
@@ -141,9 +141,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageThree.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           Agora que temos o retorno do nosso array de Pokemons, precisamos
           trabalhar no <code>state</code> que já definimos (
           <code>setPokemonData</code>) e que lidará com o armazenamento e
@@ -167,9 +167,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageFour.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           Vamos então, verificarmos o retorno e tratar da sua renderização em
           tela, logo após podemos ver a implementação dos botões. Usando o{" "}
           <code>state</code>
@@ -183,9 +183,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageFive.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           Após ser feita a renderização dos dados, podemos lidar com a
           implementação das funções dos botões: anterior e próximo. Iniciamos
           nossa função <code>next</code> que também deve ser uma função
@@ -207,9 +207,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageSix.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           <code>setPrevUrl</code> também tem as mesmas funcionalidades, exceto
           que seu armazenamento é feito somente caso haja uma página anterior,
           como podemos verificar de acordo com a condicional <code>if</code> no
@@ -220,9 +220,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageSeven.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           <code>loadPokemon</code> tem como parâmetro os dados que retornam da
           APi (<code>data</code>).
           <code>let _pokemonData</code>, recebe e aguarda (<code>await</code>)
@@ -246,9 +246,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageEight.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           Com as implementações feitas, iremos cuidar agora do processo de
           renderização de nossos components. Iremos passar dentro da{" "}
           <code>div “card__name”</code> nossos objetos. Iniciamos fazendo um
@@ -268,9 +268,9 @@ const PagesBlogPostOne = () => {
         <img
           src="/images/blog/async-await/imageNine.png"
           alt="imagem demonstrativa do exemplo"
-          className="container-image-async__await"
+          className="container-image"
         />
-        <p className="container-text-async__await">
+        <p className="container-text-general">
           Com isso finalizamos nossa aplicação. Espero ter ajudado e nos
           vemos no próximo post. Até breve🖖🏾
         </p>
@@ -278,4 +278,4 @@ const PagesBlogPostOne = () => {
     );
 }
 
-export default PagesBlogPostOne;
+export default PagesBlogAsyncAwait;
