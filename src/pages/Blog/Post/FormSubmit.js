@@ -13,8 +13,7 @@ const PagesBlogFormSubmit = () => {
             Enviando formulário sem programar Back-End com Formsubmit{" "}
           </h3>
           <p className="container-text-general">
-            <p>
-              Faaala Dev, tudo bem? Espero que sim. Passando pra deixar aquela
+            <p>Faaala Dev, tudo bem? Espero que sim. Passando pra deixar aquela
               dica!! Até pouco tempo não conhecia o <code>formsubmit</code>, uma
               forma bacana de ter uma aplicação simples, desenvolvida com{" "}
               <code>HTML</code> e <code>CSS</code> e deploy na Vercel ou até
