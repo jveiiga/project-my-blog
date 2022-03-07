@@ -8,7 +8,7 @@ import Footer from 'components/Footer/Footer'
 const PagesBlogPostsCardFormSubmit = () => {
     return (
       <>
-        <main className="container-post__title">
+        <main className="container-post">
           <span className="container-title__card">2022</span>
           <Link to="/FormSubmit">
             <section className="container-card">

@@ -103,7 +103,7 @@ li a:hover,
   flex-direction: column;
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: all 0.8s ease-in-out;
   padding-left: 10px;
   background-color: #fff;
 }
@@ -293,6 +293,10 @@ li a:hover,
   max-width: 333px;
 }
 
+.container-post {
+  margin-top: 50px;
+}
+
 .container-title__card {
   box-sizing: border-box;
   display: flex;
@@ -477,6 +481,19 @@ li a:hover,
   .container-main {
     margin: 0 0 150px 0;
   }
+
+  .container-copytoclipboard {
+    max-width: 100%;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 10px 0 10px 20px;
+    cursor: pointer;
+  }
+
+  .container-copytoclipboard:hover{
+    background-color: hsl(120, 100%, 93%);
+    border-color: #00C642;
+  }
 }
 
 /****************** 1024px main page *********************/
@@ -554,6 +571,8 @@ li a:hover,
     width: 280px;
     height: 260px;
   }
+
+  
 }
 
 /******************* main page ******************/
@@ -615,7 +634,7 @@ li a:hover,
   }
 
   .container-copytoclipboard {
-    width: 675px;
+    max-width: 100%;
     border: 1px solid;
     border-radius: 6px;
     padding: 10px 0 10px 20px;

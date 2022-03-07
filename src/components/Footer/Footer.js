@@ -27,10 +27,15 @@ const Footer = () => {
                 alt="icon git hub"
               />
             </a>
-            <img
-              src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"
-              alt="icon linkedin"
-            />
+            <a
+              target="_blank"
+              rel="noreferrer" 
+              href="https://www.linkedin.com/in/jveiiga/">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png"
+                alt="icon linkedin"
+              />
+            </a>
             <a
               target="_blank"
               rel="noreferrer"
