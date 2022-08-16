@@ -18,7 +18,7 @@ const PagesMain = () => {
         <p className="container-text">
           Hello World! <br />
           I'm Jeferson Veiga, front-end developer. <br />I love sports, games and
-          coffe. <br /> Some of my works are available here, feel free!
+          coffee. <br /> Some of my works are available here, feel free!
         </p>
         <Footer/>
       </main>

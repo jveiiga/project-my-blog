@@ -5,6 +5,7 @@ import PagesAboutMe from './pages/AboutMe/AboutMe';
 import PagesBlog from './pages/Blog/Blog';
 import PagesBlogAsyncAwait from './pages/Blog/Post/AsyncAwait';
 import PagesBlogFormSubmit from 'pages/Blog/Post/FormSubmit';
+import PagesBlogFuncoesParametros from './pages/Blog/Post/FuncoesParametros';
 
 const IndexRoutes = () => {
   return (
@@ -23,6 +24,9 @@ const IndexRoutes = () => {
       </Route>
       <Route exact path="/FormSubmit">
         <PagesBlogFormSubmit />
+      </Route>
+      <Route exact path="/FuncoesParametros">
+        <PagesBlogFuncoesParametros />
       </Route>
     </Switch>
   );  

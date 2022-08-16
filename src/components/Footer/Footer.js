@@ -17,6 +17,7 @@ const Footer = () => {
         </div>
         <div>
           <div className="container-icons">
+            {/* github */}
             <a
               target="_blank"
               rel="noreferrer"
@@ -24,9 +25,10 @@ const Footer = () => {
             >
               <img
                 src="https://img.icons8.com/ios-filled/30/000000/github.png"
-                alt="icon git hub"
+                alt="icon github"
               />
             </a>
+            {/* linkedin */}
             <a
               target="_blank"
               rel="noreferrer" 
@@ -36,6 +38,7 @@ const Footer = () => {
                 alt="icon linkedin"
               />
             </a>
+            {/* e-mail */}
             <a
               target="_blank"
               rel="noreferrer"
@@ -44,6 +47,17 @@ const Footer = () => {
               <img
                 src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/35/000000/external-email-interface-kiranshastry-solid-kiranshastry.png"
                 alt="icon email"
+              />
+            </a>
+            {/* instagram */}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/jveiga.dev/"
+            >
+              <img
+                src="https://img.icons8.com/glyph-neue/344/instagram-new.png"
+                alt="icon instagram"
               />
             </a>
           </div>

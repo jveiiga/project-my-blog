@@ -1,9 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from 'components/Footer/Footer'
-
-
-
 
 const PagesBlogPostsCardFormSubmit = () => {
     return (
@@ -16,7 +12,6 @@ const PagesBlogPostsCardFormSubmit = () => {
               <p>06 Março 2022</p>
             </section>
           </Link>
-          <Footer/>
         </main>
       </>
     );
